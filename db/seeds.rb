@@ -7,6 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "faker"
 require "time"
+puts "The following users exist: #{User.all}"
 
 puts "Destroying existing data..."
 User.destroy_all
@@ -15,11 +16,6 @@ EventBooking.destroy_all
 Message.destroy_all
 Discussion.destroy_all
 Event.destroy_all
-
-# nicknames = ["Bob", "Sally", "Tim", "Lizzie", "Linda", "Nirajan", "Frank", "Susie", "Roy", "Lucy",
-#   "John", "Oliver", "Stein", "Ferro", "Nero", "Chen", "Thomas", "Eleo", "Vitas",
-#   "Bach", "Jonny", "Silber", "Mark", "Michael", "Jack", "Johnny", "Fierro", "Ale", "Greg", "Robert", "Sam"]
-
 
 puts "START: Generating seeds..."
 themes = [
@@ -94,3 +90,4 @@ end
 # end
 
 puts "END: Seeds generated."
+puts "The following users exist: #{User.all}"
