@@ -56,6 +56,7 @@ group :development, :test do
   gem 'factory_bot'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
 group :development do
@@ -77,9 +78,6 @@ end
 
 # Devise
 gem "devise"
-
-# Faker
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 # Pundit
 gem "pundit"
