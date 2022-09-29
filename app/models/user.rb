@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_many :events, dependent: :destroy
   has_many :event_bookings, dependent: :destroy
   has_many :messages, dependent: :destroy
+
+  def admin?
+    return admin
+  end
 end
